@@ -29,6 +29,8 @@
 
 }
 
+
+
 body {
     font-size: 15px;
     background-color: var(--background-color);
@@ -36,14 +38,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
+
+/* Main card css start from here */
 
 .container {
 
 
 
-    width: 60%;
+    width: 70%;
 
 
 
@@ -94,6 +99,7 @@ h1 .highlight {
     font-family: var(--main);
     text-transform: uppercase;
     /* font-weight: 300; */
+    margin-top: 50px;
 
 
 }
@@ -147,76 +153,18 @@ h1 .highlight {
     background-color: rgba(170, 92, 219, 0.3);
 }
 
-
-
-/* Media queries start from here  */
-
-@media screen and (max-width: 414px) {
-
-    .container {
-
-        /* padding: 30px; */
-        width: 80%;
-
-    }
+/* Main card css ends  */
 
 
 
-    .boxs {
 
-        flex-direction: column-reverse;
-        /* padding: 40px; */
-        width: 100%;
-    }
-
-    .box-1 {
-        width: 100%;
-        padding: 20px;
-        font-size: 20px;
-        border-radius: 0px 0px 6px 6px;
-    }
-
-    .box-1 p {
-
-        line-height: 1.5em;
-        margin-top: 13px;
-        font-size: 1rem;
-        font-weight: 300;
-        text-align: center;
-    }
-
-   .innerNum .weight{
-
-    font-weight: lighter;
-    font-family: var(--paragraph);
-   }
-
-    h1 {
-
-
-        line-height: 1.2em;
-        font-size: 1.6rem;
-        text-align: center;
-    }
-
-    .box-2 {
-
-        height: 250px;
-        width: 100%;
-        background-position: center;
-        border-radius: 6px 6px 0px 0px;
-    }
-
-    .num {
-
-        flex-direction: column;
-    }
+/* Media queries for mobile device start from here  */
 
 
 
-}
+@media only screen and (max-width: 767px) {
 
-@media screen (max-width: 480px) {
+   
 
     .container {
 
@@ -280,3 +228,75 @@ h1 .highlight {
 
 
 }
+
+
+/* Mobile device media queries ends here  */
+
+
+
+
+/* media queries for TAB devices start from here  */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+
+        /* padding: 30px; */
+        width: 80%;
+
+    }
+
+
+
+    .boxs {
+
+        flex-direction: column-reverse;
+        /* padding: 40px; */
+        width: 100%;
+    }
+
+    .box-1 {
+        width: 100%;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 0px 0px 6px 6px;
+    }
+
+    .box-1 p {
+
+        line-height: 1.5em;
+        margin-top: 13px;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+   .innerNum .weight{
+
+    font-weight: lighter;
+    font-family: var(--paragraph);
+   }
+
+    h1 {
+
+
+        line-height: 1.2em;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .box-2 {
+
+        height: 250px;
+        width: 100%;
+        background-position: center;
+        border-radius: 6px 6px 0px 0px;
+    }
+
+    .num {
+
+        flex-direction: column;
+    }
+}
+
+/* media queries for tab devices ends here  */
