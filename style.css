@@ -216,7 +216,7 @@ h1 .highlight {
 
 }
 
-@media screen and (min-width : 415) and (max-width: 967px) {
+@media screen (max-width: 480px) {
 
     .container {
 
