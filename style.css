@@ -1,16 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca&display=swap') * {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca&display=swap');
 
-*{
+* {
 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
 
-    font-size: 15px
-}
 
 
 :root {
@@ -20,7 +17,7 @@ body {
     --primary-color: hsl(228, 45%, 44%);
     --background-color: hsl(233, 47%, 7%);
     --Dark-blue: hsl(244, 38%, 16%);
-    --Soft-violet: hsl(277, 64%, 61%);
+    --Soft-violet: rgb(170, 92, 219);
     --white: hsl(0, 0%, 100%);
     --main-paragraph: hsla(0, 0%, 100%, 0.75);
     --stat-headings: hsla(0, 0%, 100%, 0.6);
@@ -32,18 +29,254 @@ body {
 
 }
 
+body {
+    font-size: 15px;
+    background-color: var(--background-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .container {
 
 
 
-    display: flex;
-    height: 600px;
+    width: 60%;
+
+
+
 }
 
-.box {
+.boxs {
 
-    width: 100px;
-    height: 100px;
-    background-color: red;
+
+    display: flex;
+    /* justify-content: center; */
+
+
+
+
+}
+
+h1 {
+
+    font-family: var(--main);
+    line-height: 1.4em;
+    font-size: 2em;
+
+}
+
+h1 .highlight {
+
+    color: var(--Soft-violet);
+}
+
+
+.box-1 {
+    width: 50%;
+    background-color: var(--Dark-blue);
+    color: var(--white);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 60px;
+
+
+
+
+}
+
+.box-1 .num {
+
+    display: flex;
+    gap: 40px;
+    font-family: var(--main);
+    text-transform: uppercase;
+    /* font-weight: 300; */
+
+
+}
+
+.weight {
+
+    font-weight: lighter;
+}
+
+.box-1 p {
+
+    font-family: var(--paragraph);
+    line-height: 1.7em;
+    margin-top: 30px;
+
+}
+
+.box-1 .num .innerNum p{
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.weight {
+
+    font-weight: 100;
+    font-size: 12px;
+
+}
+
+.box-2 {
+    /* width: 50%; */
+    background-image: url(/images/image-header-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: relative;
+    width: 50%;
+
+}
+
+.box-2 .purpleOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(170, 92, 219, 0.3);
+}
+
+
+
+/* Media queries start from here  */
+
+@media screen and (max-width: 414px) {
+
+    .container {
+
+        /* padding: 30px; */
+        width: 80%;
+
+    }
+
+
+
+    .boxs {
+
+        flex-direction: column-reverse;
+        /* padding: 40px; */
+        width: 100%;
+    }
+
+    .box-1 {
+        width: 100%;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 0px 0px 6px 6px;
+    }
+
+    .box-1 p {
+
+        line-height: 1.5em;
+        margin-top: 13px;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+   .innerNum .weight{
+
+    font-weight: lighter;
+    font-family: var(--paragraph);
+   }
+
+    h1 {
+
+
+        line-height: 1.2em;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .box-2 {
+
+        height: 250px;
+        width: 100%;
+        background-position: center;
+        border-radius: 6px 6px 0px 0px;
+    }
+
+    .num {
+
+        flex-direction: column;
+    }
+
+
+
+}
+
+@media screen and (min-width : 415) and (max-width: 967px) {
+
+    .container {
+
+        /* padding: 30px; */
+        width: 80%;
+
+    }
+
+
+
+    .boxs {
+
+        flex-direction: column-reverse;
+        /* padding: 40px; */
+        width: 100%;
+    }
+
+    .box-1 {
+        width: 100%;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 0px 0px 6px 6px;
+    }
+
+    .box-1 p {
+
+        line-height: 1.5em;
+        margin-top: 13px;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+   .innerNum .weight{
+
+    font-weight: lighter;
+    font-family: var(--paragraph);
+   }
+
+    h1 {
+
+
+        line-height: 1.2em;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .box-2 {
+
+        height: 250px;
+        width: 100%;
+        background-position: center;
+        border-radius: 6px 6px 0px 0px;
+    }
+
+    .num {
+
+        flex-direction: column;
+    }
+
+
+
 }
