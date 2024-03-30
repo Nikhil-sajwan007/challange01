@@ -133,7 +133,7 @@ h1 .highlight {
 
 .box-2 {
     /* width: 50%; */
-    background-image: url(./images/image-header-desktop.jpg);
+    background-image: url(../images/image-header-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
